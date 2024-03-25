@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FindMyWeather</title>
+</head>
+<body>
+    <div class="cont">
+        <div id="title">FindMyWeather</div>
+        <div id="input-lines">
+
+            <label for="location">Location</label>
+            <input type="text" name="location" id="location" required>
+            <div class="sep-20"></div>
+            <label for="start-date">Start Date</label>
+            <input type="date" name="start-date" id="start-date" required>
+            <div class="sep-20"></div>
+            <label for="end-date">End Date</label>
+            <input type="date" name="end-date" id="end-date" required>
+            <div class="sep-20"></div>
+            <button id="submit" onclick="main()">DISPLAY DETAILS</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
