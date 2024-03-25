@@ -1,4 +1,0 @@
-tempmax
-tempmin
-conditions
-feelslike
