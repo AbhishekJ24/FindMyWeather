@@ -1,0 +1,4 @@
+tempmax
+tempmin
+conditions
+feelslike
