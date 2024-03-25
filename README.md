@@ -32,7 +32,3 @@ This project integrates with the Visual Crossing Weather API to retrieve weather
 ```
 let api_link = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/[LOCATION]/[START-DATE]/[END-DATE]?key=[YOUR_API_KEY]';
 ```
-
-## Author
-
-- Abhishek Joshi
