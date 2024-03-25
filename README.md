@@ -18,7 +18,7 @@ FindMyWeather is a web application that allows users to find weather details for
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/find-my-weather.git
+git clone https://github.com/your-username/FindMyWeather.git
 ```
 
 2. Open the index.html file in your web browser or host it on a web server.
