@@ -19,3 +19,20 @@ FindMyWeather is a web application that allows users to find weather details for
 
 ```bash
 git clone https://github.com/your-username/find-my-weather.git
+```
+
+2. Open the index.html file in your web browser or host it on a web server.
+3. Enter the location, start date, and end date in the input fields provided.
+4. Click on the "DISPLAY DETAILS" button to view weather information for the specified location and date range.
+
+## API Integration
+
+This project integrates with the Visual Crossing Weather API to retrieve weather details based on user input. You will need to obtain an API key from Visual Crossing Weather and replace 'YOUR_API_KEY' in the script.js file with your actual API key.
+
+```
+let api_link = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/[LOCATION]/[START-DATE]/[END-DATE]?key=[YOUR_API_KEY]';
+```
+
+## Author
+
+- Abhishek Joshi
