@@ -3,16 +3,16 @@
 * {
     font-family: "Red Hat Display", sans-serif;
     box-sizing: border-box;
-    font-size: 25px;
-    
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
 }
 
-body {
+#background img{
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(rgb(61, 167, 233), rgb(61, 167, 233), rgb(61, 167, 233), rgb(86, 243, 86));
-    padding: 10px;
-    background-repeat: no-repeat;
+    object-fit: cover;
+    filter: blur(10px);
 }
 
 .sep-20 {
@@ -21,9 +21,9 @@ body {
 
 .cont {
     position: absolute;
-    width: 800px;
-    height: 800px;
-    background-color: rgb(250, 250, 87);
+    width: 600px;
+    height: 600px;
+    background-color: rgb(250, 250, 121);
     padding: 20px;
     border-radius: 30%;
     top: 50%;
@@ -33,7 +33,7 @@ body {
 
 #title {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
     margin: 40px auto;
     text-align: center;
 }
@@ -86,10 +86,13 @@ body {
 }
 
 #refresh {
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+#refresh img:hover{
+    transform: scale(1.1);
 }
