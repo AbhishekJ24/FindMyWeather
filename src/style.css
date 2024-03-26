@@ -2,7 +2,6 @@
 
 * {
     font-family: "Red Hat Display", sans-serif;
-    box-sizing: border-box;
     font-size: 20px;
     padding: 0;
     margin: 0;
@@ -12,7 +11,7 @@
     height: 100vh;
     width: 100vw;
     object-fit: cover;
-    filter: blur(10px);
+    filter: blur(25px);
 }
 
 .sep-20 {
@@ -20,12 +19,12 @@
 }
 
 .cont {
-    overflow: auto;
+    overflow: scroll;
     position: absolute;
-    width: 45vw;
-    height: 50vh;
+    width: 50vw;
+    height: 60vh;
     background-color: rgb(250, 250, 121);
-    padding: 20px;
+    padding: 40px;
     border-radius: 30%;
     top: 40%;
     left: 50%;
@@ -35,7 +34,7 @@
 #title {
     font-weight: 700;
     font-size: 40px;
-    margin: 40px auto;
+    margin: 10px auto;
     text-align: center;
 }
 
@@ -75,10 +74,6 @@
 }
 
 #output-lines {
-    position: relative;
-    z-index: 10;
-    left: 5%;
-    top: 2%;
     display: none;
 }
 

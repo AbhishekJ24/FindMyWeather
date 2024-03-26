@@ -1,5 +1,5 @@
 async function findInfo(location, start, end) {
-    let api_link = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/' + location + '/' + start + '/' + end + '?key=BTV9QPSWT2YVEQK6DZ7VJ6AET'
+    let api_link = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/' + location + '/' + start + '/' + end + '?key=L22WHMCBCWEXC62P6V9FBG6QH'
     let response = await fetch(api_link)
     let inJSON = await response.json()
     let daysInfo = inJSON['days']
