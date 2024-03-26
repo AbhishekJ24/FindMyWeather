@@ -11,12 +11,12 @@ async function findInfo(location, start, end) {
 
         let li1 = document.createElement('li')
         let tempMax = daysInfo[i]['tempmax']
-        li1.innerHTML = tempMax;
+        li1.innerHTML = tempConvert(tempMax);
         dateUL.append(li1)
 
         let li2 = document.createElement('li')
         let tempMin = daysInfo[i]['tempmin']
-        li2.innerHTML = tempMin
+        li2.innerHTML = tempConvert(tempMin)
         dateUL.append(li2)
 
         let li3 = document.createElement('li')
@@ -26,16 +26,20 @@ async function findInfo(location, start, end) {
 
         let li4 = document.createElement('li')
         let feelsLike = daysInfo[i]['feelslike']
-        li4.innerHTML = feelsLike
+        li4.innerHTML = tempConvert(feelsLike)
         dateUL.append(li4)
 
         let div = document.createElement('div')
         div.classList.add('sep-20')
         dateUL.append(div)
-        
+
         outputUL.append(dateUL)
     }
 
+}
+
+function tempConvert(tFahrenheit) {
+    return ((tFahrenheit - 32) * (5 / 9)).toFixed(1)
 }
 
 async function userInput() {
