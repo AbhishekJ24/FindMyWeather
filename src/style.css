@@ -20,7 +20,7 @@
 }
 
 .cont {
-    overflow: scroll;
+    overflow: auto;
     position: absolute;
     width: 45vw;
     height: 50vh;
@@ -82,8 +82,26 @@
     display: none;
 }
 
-#dates-info ul {
-    list-style: none;
+#weather-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#weather-table th,
+#weather-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#weather-table th {
+    background-color: rgb(201, 234, 254);
+    font-weight: bold;
+}
+
+#weather-table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 #refresh {

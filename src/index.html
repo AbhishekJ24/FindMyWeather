@@ -4,37 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FindMyWeather - Get weather details for any location">
+    <meta name="keywords" content="weather, forecast, location, temperature">
+    <meta name="author" content="Your Name">
+
     <link rel="stylesheet" href="/src/style.css">
     <title>FindMyWeather</title>
 </head>
 
 <body>
-    <div id="background">
-        <img src="/assets/background.jpg" alt="">
-    </div>
-    <div class="cont">
-        <div id="title">FindMyWeather</div>
-        <div id="input-lines">
-            <label for="location">Location</label>
-            <input type="text" name="location" id="location" required>
-            <div class="sep-20"></div>
-            <label for="start-date">Start Date</label>
-            <input type="date" name="start-date" id="start-date" required>
-            <div class="sep-20"></div>
-            <label for="end-date">End Date</label>
-            <input type="date" name="end-date" id="end-date" required>
-            <div class="sep-20"></div>
-            <button id="submit" onclick="main()">DISPLAY DETAILS</button>
+    <header>
+        <div id="background">
+            <img src="/assets/background.jpg" alt="">
         </div>
-        <div id="output-lines">
-            <ul id="dates-info">
-            </ul>
+        <div class="cont">
+            <div id="title">FindMyWeather</div>
+            <div id="input-lines">
+                <label for="location">Location</label>
+                <input type="text" name="location" id="location" required>
+                <div class="sep-20"></div>
+                <label for="start-date">Start Date</label>
+                <input type="date" name="start-date" id="start-date" required>
+                <div class="sep-20"></div>
+                <label for="end-date">End Date</label>
+                <input type="date" name="end-date" id="end-date" required>
+                <div class="sep-20"></div>
+                <button id="submit">DISPLAY DETAILS</button>
+            </div>
+            <div id="output-lines">
+                <table id="weather-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Max Temperature</th>
+                            <th>Min Temperature</th>
+                            <th>Conditions</th>
+                            <th>Feels Like</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dates-info"></tbody>
+                </table>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <button id="refresh" onclick="location.reload()">
-        <img src="/assets/refresh-icon.svg" alt="refresh">
-    </button>
+    <footer>
+        <button id="refresh">
+            <img src="/assets/refresh-icon.svg" alt="refresh">
+        </button>
+    </footer>
 
     <script src="/src/script.js"></script>
 </body>
