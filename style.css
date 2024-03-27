@@ -19,13 +19,13 @@
 }
 
 .cont {
-    overflow: scroll;
+    overflow: auto;
     position: absolute;
     width: 50vw;
     height: 60vh;
     background-color: rgb(250, 250, 121);
     padding: 40px;
-    border-radius: 30%;
+    border-radius: 20%;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
