@@ -1,113 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Slab:wght@100..900&display=swap');
-
-* {
-    font-family: "Red Hat Display", sans-serif;
-    font-size: 20px;
+*{
+    font-family: "Montserrat", sans-serif;;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
-#background img {
+body{
+    background: url('/background.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.cont{
     height: 100vh;
     width: 100vw;
-    object-fit: cover;
-    filter: blur(25px);
+    display: grid;
+    place-items: center;
 }
 
-.sep-20 {
-    height: 20px;
-}
-
-.cont {
-    overflow: auto;
-    position: absolute;
+.wrapper{
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur(100px);
+    padding: 2rem;
+    border-radius: 3rem;
+    height: 75vh;
     width: 50vw;
-    height: 60vh;
-    background-color: rgb(250, 250, 121);
-    padding: 40px;
-    border-radius: 20%;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-#title {
-    font-weight: 700;
-    font-size: 40px;
-    margin: 10px auto;
+.wrapper h1{
     text-align: center;
+    font-size: 4rem;
+    color: rgba(0,0,0,0.8);
+    margin-bottom: 5rem;
 }
 
-#input-lines {
-    position: relative;
-    z-index: 10;
-    left: 10%;
-    top: 2%;
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
-#input-lines>input {
-    width: 250px;
-    color: rgb(61, 167, 233);
-    padding: 13px;
-    margin-left: 10px;
-    background-color: rgb(249, 249, 193);
-    border-radius: 25px;
-    border: none;
+.form-group{
+    display: flex;
+    justify-content: space-between;
 }
 
-#location {
-    width: 400px;
+.form-group label{
+    font-weight: 600;
 }
 
-#submit {
-    font-weight: 700;
-    padding: 15px;
-    color: rgb(11, 73, 112);
-    background-color: rgb(201, 234, 254);
-    border-radius: 30px;
-    border: none;
+.form-group label, .form-group input{
+    font-size: 1.5rem;
 }
 
-#submit:hover {
-    cursor: pointer;
-    background-color: rgb(230, 241, 247);
-}
-
-#output-lines {
-    display: none;
-}
-
-#weather-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-#weather-table th,
-#weather-table td {
-    padding: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-#weather-table th {
-    background-color: rgb(201, 234, 254);
-    font-weight: bold;
-}
-
-#weather-table tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-#refresh {
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
+.form-group input{
     background-color: transparent;
+    font-weight: 300;
     border: none;
-    cursor: pointer;
+    border-bottom: 2px solid black;
+    width: 75%;
+    padding-bottom: 0.7rem;
 }
 
-#refresh img:hover {
-    transform: scale(1.1);
+.form-group input:focus{
+    outline: none;
+}
+
+.form-group button{
+    width: 25%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    background-color: rgb(8, 156, 255);
+    color: whitesmoke;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.form-group button:hover{
+    background-color: rgba(60, 177, 255, 0.912);
 }

@@ -7,31 +7,37 @@
     <meta name="description" content="FindMyWeather - Get weather details for any location">
     <meta name="keywords" content="weather, forecast, location, temperature">
     <meta name="author" content="Your Name">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
     <title>FindMyWeather</title>
 </head>
 
 <body>
-    <header>
-        <div id="background">
-            <img src="/background.jpg" alt="">
-        </div>
-        <div class="cont">
-            <div id="title">FindMyWeather</div>
-            <div id="input-lines">
-                <label for="location">Location</label>
-                <input type="text" name="location" id="location" required>
-                <div class="sep-20"></div>
-                <label for="start-date">Start Date</label>
-                <input type="date" name="start-date" id="start-date" required>
-                <div class="sep-20"></div>
-                <label for="end-date">End Date</label>
-                <input type="date" name="end-date" id="end-date" required>
-                <div class="sep-20"></div>
-                <button id="submit">DISPLAY DETAILS</button>
-            </div>
-            <div id="output-lines">
+    <main class="cont">
+        <div class="wrapper">
+            <h1>FindMyWeather</h1>
+            <form id="form">
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" name="location" id="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="start">Start Date</label>
+                    <input type="date" name="start" id="start" required>
+                </div>
+                <div class="form-group">
+                    <label for="end">End Date</label>
+                    <input type="date" name="end" id="end" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit">View Details</button>
+                </div>
+            </form>
+            <div id="output-lines" style="display:none;">
                 <table id="weather-table">
                     <thead>
                         <tr>
@@ -46,14 +52,7 @@
                 </table>
             </div>
         </div>
-    </header>
-
-    <footer>
-        <button id="refresh">
-            <img src="/refresh-icon.svg" alt="refresh">
-        </button>
-    </footer>
-
+    </main>
     <script src="/script.js"></script>
 </body>
 
